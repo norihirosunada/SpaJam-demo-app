@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638011743770000000
-    m_Hash: 3979996139
+      ticks: 638015174050000000
+    m_Hash: 1973717979
   m_LockFileStatus:
     m_FilePath: /Users/satohayase/Desktop/SpaJam-demo-app/SPAJAM_Demo/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638011743800000000
-    m_Hash: 3809199474
+      ticks: 638015174050000000
+    m_Hash: 181177968
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -308,9 +308,11 @@ m_ResolvedPackages:
     - 3.0.13
     - 3.0.14
     - 3.0.15
+    - 3.0.16
     compatible:
     - 3.0.15
-    verified: 3.0.15
+    - 3.0.16
+    verified: 3.0.16
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -1032,6 +1034,51 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.7.8
+    nextVersion: 
+- packageId: jp.rarafy.openjtalk_for_unity@https://github.com/rarafy/OpenJTalkForUnity.git?path=_Project/Packages/OpenJTalkForUnity
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.13
+  source: 5
+  resolvedPath: /Users/satohayase/Desktop/SpaJam-demo-app/SPAJAM_Demo/Library/PackageCache/jp.rarafy.openjtalk_for_unity@7e48c211ab
+  assetPath: Packages/jp.rarafy.openjtalk_for_unity
+  name: jp.rarafy.openjtalk_for_unity
+  displayName: OpenJTalkForUnity
+  author:
+    name: rarafy
+    email: 
+    url: 
+  category: 
+  type: 
+  description: This is a test package
+  status: 4
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    verified: 
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0

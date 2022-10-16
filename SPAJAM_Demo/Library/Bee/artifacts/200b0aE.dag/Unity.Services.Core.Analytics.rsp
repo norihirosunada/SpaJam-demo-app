@@ -334,6 +334,7 @@
 -r:"/Users/satohayase/Desktop/SpaJam-demo-app/SPAJAM_Demo/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"/Users/satohayase/Desktop/SpaJam-demo-app/SPAJAM_Demo/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"/Users/satohayase/Desktop/SpaJam-demo-app/SPAJAM_Demo/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/Users/satohayase/Desktop/SpaJam-demo-app/SPAJAM_Demo/Library/PackageCache/jp.rarafy.openjtalk_for_unity@7e48c211ab/Runtime/dll/System.Windows.Forms.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Services.Core.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
