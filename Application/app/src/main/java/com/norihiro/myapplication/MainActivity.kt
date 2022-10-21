@@ -2,15 +2,23 @@ package com.norihiro.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.Timestamp
+import com.google.firebase.messaging.FirebaseMessaging
 import io.grpc.Context.Storage
 import java.util.Date
 
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        private val TAG = "MainActivity"
+    }
 
     // Firestore
     val firestoreIns = FirestoreSnippets()
@@ -54,6 +62,21 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<ImageView>(R.id.image1).setImageResource(R.drawable.sample)
+
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                Log.w(TAG, "Fetching FCM registration token failed", task.exception)
+                return@OnCompleteListener
+            }
+
+            // Get new FCM registration token
+            val token = task.result
+
+            // Log and toast
+            val msg = getString(R.string.msg_token_fmt, token)
+            Log.d(TAG, msg)
+            Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+        })
     }
 }
 
