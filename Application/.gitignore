@@ -1,5 +1,3 @@
-!/unityLibrary
-
 .gradle
 /local.properties
 /.idea/caches
@@ -99,6 +97,3 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
-
-*.suo
-*.so
