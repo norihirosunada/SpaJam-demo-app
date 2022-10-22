@@ -83,3 +83,6 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+SPAJAM_Unity/Library/
+SPAJAM_Unity/UserSettings/
