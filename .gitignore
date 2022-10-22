@@ -87,4 +87,7 @@ lint/tmp/
 
 SPAJAM_Unity/Library/
 SPAJAM_Unity/UserSettings/
-
+SPAJAM_Unity/[Tt]emp/
+SPAJAM_Unity/[Oo]bj/
+SPAJAM_Unity/[Ll]ogs/
+SPAJAM_Unity/[Mm]emoryCaptures/
