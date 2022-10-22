@@ -1,1 +1,1 @@
-# SpaJam-demo-app
+# SpaJam-app
