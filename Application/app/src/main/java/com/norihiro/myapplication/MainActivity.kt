@@ -2,6 +2,7 @@ package com.norihiro.myapplication
 
 import android.os.Bundle
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.unity3d.player.UnityPlayer
