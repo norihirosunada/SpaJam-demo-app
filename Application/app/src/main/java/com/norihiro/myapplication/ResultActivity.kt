@@ -1,5 +1,6 @@
 package com.norihiro.myapplication
 
+import android.graphics.Color
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,8 +39,17 @@ class ResultActivity : AppCompatActivity() {
             finish()
         }
 
+        val positiveVal = intent.getFloatExtra("POSITIVE", 0.0F)
+        Log.d("POSITIVE_VAL", positiveVal.toString())
+        val negativeVal = intent.getFloatExtra("NEGATIVE", 0.0F)
+        Log.d("NEGATIVE_VAL", negativeVal.toString())
+        if(positiveVal < negativeVal) {
+            findViewById<ImageView>(R.id.resultCircle).setColorFilter(Color.parseColor("#603D26"))
+        } else {
+            findViewById<ImageView>(R.id.resultCircle).setColorFilter(Color.parseColor("#F84B3D"))
+        }
         val colorcode = intent.getIntExtra("COLOR", 0)
-        findViewById<ImageView>(R.id.resultCircle).setColorFilter(colorcode)
+//        findViewById<ImageView>(R.id.resultCircle).setColorFilter(Color.parseColor("#F84B3D"))
 
         val getIconName = intent.getStringExtra("PICTURE")
         findViewById<TextView>(R.id.resultPicture).text = getIconName + "を獲得しました！おめでとうございます！"

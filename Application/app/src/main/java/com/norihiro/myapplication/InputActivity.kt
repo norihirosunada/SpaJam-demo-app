@@ -71,7 +71,7 @@ class InputActivity : AppCompatActivity() {
                     val text = editText.text.toString()
 
                     // APIに通した結果をDBに保存する
-                    languageTask(text) { data, color ->
+                    languageTask(text) { data, color, positive, negative ->
 
                         // 画面遷移
                         val intent = Intent(application, ResultActivity::class.java)
@@ -81,6 +81,8 @@ class InputActivity : AppCompatActivity() {
                         intent.putExtra("PICTURE", data)
                         intent.putExtra("COLOR", color)
                         intent.putExtra("INPUT_STRING", text)
+                        intent.putExtra("POSITIVE", positive)
+                        intent.putExtra("NEGATIVE", negative)
                         startActivity(intent)
                     }
 
@@ -108,7 +110,7 @@ class InputActivity : AppCompatActivity() {
         }
     }
 
-    private fun languageTask(text: String, completion: ((String, Int) -> Unit)? = null) {
+    private fun languageTask(text: String, completion: ((String, Int, Float, Float) -> Unit)? = null) {
 
         val mediaType = MediaType.parse("application/json; charset=utf-8")
         val json = """
@@ -176,7 +178,7 @@ class InputActivity : AppCompatActivity() {
 
                     val positiveColor = FloatArray(3)
                     negativeColor[0] = 25.2F
-                    negativeColor[1] = 0.55F + (0.45F * negative)
+                    negativeColor[1] = 0.55F + (0.45F * positive)
                     negativeColor[2] = 1.0F
 
                     Log.d("COLOR_INT", ColorUtils.HSLToColor(negativeColor).toString())
@@ -242,7 +244,7 @@ class InputActivity : AppCompatActivity() {
                                 name = data,
                                 date = "2022/10/23",
                             ))
-                        completion?.invoke(data, ColorUtils.HSLToColor(negativeColor))
+                        completion?.invoke(data, ColorUtils.HSLToColor(negativeColor), positive, negative)
                     } else {
                         db?.FoodDao()?.insert(
                             Foods(
@@ -250,7 +252,7 @@ class InputActivity : AppCompatActivity() {
                                 name = data,
                                 date = "2022/10/23",
                             ))
-                        completion?.invoke(data, ColorUtils.HSLToColor(positiveColor))
+                        completion?.invoke(data, ColorUtils.HSLToColor(positiveColor), positive, negative)
                     }
 
                 }

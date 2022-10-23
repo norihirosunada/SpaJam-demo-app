@@ -123,18 +123,15 @@ class HomeActivity : AppCompatActivity() {
         val messageToUnity = """
                             {"Pafe": ${multiUserJson}}
                         """.trimIndent()
-
+        communicationBridge.callToUnitySendJson(messageToUnity)
         Log.d("JSONTEXT", messageToUnity)
+
+        unityPlayer?.resume()
     }
 
     // Notify Unity of the focus change.
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         unityPlayer?.windowFocusChanged(hasFocus)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        unityPlayer?.resume()
     }
 }
