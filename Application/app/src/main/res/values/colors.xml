@@ -20,4 +20,6 @@
     <color name="color_palette_4">#9BB3CB</color>
     <color name="color_palette_5">#748CA5</color>
     <color name="color_palette_6">#36407D</color>
+
+    <color name="status_bar">#F1D6D8</color>
 </resources>
