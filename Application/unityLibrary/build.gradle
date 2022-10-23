@@ -8,7 +8,7 @@ dependencies {
 
 android {
     compileSdkVersion 30
-//    buildToolsVersion '30.0.2'
+    buildToolsVersion '30.0.2'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -23,7 +23,7 @@ android {
         }
         versionCode 1
         versionName '0.1'
-        consumerProguardFiles 'proguard-unity.txt'
+        consumerProguardFiles 'proguard-unity.txt', 'proguard-user.txt'
     }
 
     lintOptions {
@@ -98,3 +98,6 @@ android {
         }
     }
 }
+
+
+
