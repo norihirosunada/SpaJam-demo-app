@@ -29,6 +29,10 @@ class CommunicationBridge(val communicationCallback: CommunicationCallback) {
     fun callToUnityWithMessage(param: String) {
         UnityPlayer.UnitySendMessage("ApiHandler", "CallFromAndroidWithMessage", param)
     }
+
+    fun callToUnitySendJson(param: String) {
+        UnityPlayer.UnitySendMessage("ApiHandler", "pafeInfo", param)
+    }
     interface CommunicationCallback {
         fun onNoParamCall()
         fun onOneParamCall(param: String)
