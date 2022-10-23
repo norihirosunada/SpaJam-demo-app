@@ -65,6 +65,8 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
+        communicationBridge.callToUnitySendJson("")
+
         findViewById<TextView>(R.id.shareButton).setOnClickListener {
             // SNSシェアの処理を書く
 
