@@ -1,9 +1,13 @@
 package com.norihiro.myapplication
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 
 class ResultActivity : AppCompatActivity() {
     val communicationBridge = CommunicationBridge(
@@ -33,6 +37,15 @@ class ResultActivity : AppCompatActivity() {
             communicationBridge.callToUnitySendJson("{\"Pafe\": [{\"id\":0,\"color\":\"44FF45\",\"ingredient\":\"apple\",\"date\":20221001},{\"id\":1,\"color\":\"44FF46\",\"ingredient\":\"mango\",\"date\":20221002},{\"id\":2,\"color\":\"44FF47\",\"ingredient\":\"orange\",\"date\":20221003}]}")
             finish()
         }
+
+        val colorcode = intent.getIntExtra("COLOR", 0)
+        findViewById<ImageView>(R.id.resultCircle).setColorFilter(colorcode)
+
+        val getIconName = intent.getStringExtra("PICTURE")
+        findViewById<TextView>(R.id.resultPicture).text = getIconName + "を獲得しました！おめでとうございます！"
+
+        val text = intent.getStringExtra("INPUT_STRING")
+        findViewById<TextView>(R.id.resultTextView).text = text
 
         val from = intent.getStringExtra("FROM") // もしInputActivityからきた場合：InputActivity, HomeActivityからきた場合：HomeActivity
         if (from == "InputActivity" ) {
