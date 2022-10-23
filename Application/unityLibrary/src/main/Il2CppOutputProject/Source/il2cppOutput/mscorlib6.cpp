@@ -1821,64 +1821,64 @@ struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F
 		struct
 		{
 			// System.Int32 System.Decimal::flags
-			int32_t ___flags_5;
+			int32_t ___flags_8;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			int32_t ___flags_5_forAlignmentOnly;
+			int32_t ___flags_8_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___hi_6_OffsetPadding[4];
+			char ___hi_9_OffsetPadding[4];
 			// System.Int32 System.Decimal::hi
-			int32_t ___hi_6;
+			int32_t ___hi_9;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___hi_6_OffsetPadding_forAlignmentOnly[4];
-			int32_t ___hi_6_forAlignmentOnly;
+			char ___hi_9_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___hi_9_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___lo_7_OffsetPadding[8];
+			char ___lo_10_OffsetPadding[8];
 			// System.Int32 System.Decimal::lo
-			int32_t ___lo_7;
+			int32_t ___lo_10;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___lo_7_OffsetPadding_forAlignmentOnly[8];
-			int32_t ___lo_7_forAlignmentOnly;
+			char ___lo_10_OffsetPadding_forAlignmentOnly[8];
+			int32_t ___lo_10_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___mid_8_OffsetPadding[12];
+			char ___mid_11_OffsetPadding[12];
 			// System.Int32 System.Decimal::mid
-			int32_t ___mid_8;
+			int32_t ___mid_11;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___mid_8_OffsetPadding_forAlignmentOnly[12];
-			int32_t ___mid_8_forAlignmentOnly;
+			char ___mid_11_OffsetPadding_forAlignmentOnly[12];
+			int32_t ___mid_11_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___ulomidLE_9_OffsetPadding[8];
+			char ___ulomidLE_12_OffsetPadding[8];
 			// System.UInt64 System.Decimal::ulomidLE
-			uint64_t ___ulomidLE_9;
+			uint64_t ___ulomidLE_12;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___ulomidLE_9_OffsetPadding_forAlignmentOnly[8];
-			uint64_t ___ulomidLE_9_forAlignmentOnly;
+			char ___ulomidLE_12_OffsetPadding_forAlignmentOnly[8];
+			uint64_t ___ulomidLE_12_forAlignmentOnly;
 		};
 	};
 };
@@ -1886,15 +1886,15 @@ struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F
 struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields
 {
 	// System.Decimal System.Decimal::Zero
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___Zero_0;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___Zero_3;
 	// System.Decimal System.Decimal::One
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___One_1;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___One_4;
 	// System.Decimal System.Decimal::MinusOne
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinusOne_2;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinusOne_5;
 	// System.Decimal System.Decimal::MaxValue
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MaxValue_3;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MaxValue_6;
 	// System.Decimal System.Decimal::MinValue
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinValue_4;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinValue_7;
 };
 
 // System.Double
@@ -4750,6 +4750,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double DecCalc_VarR8FromDec_mED9352AB9FDD8238
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Decimal_Truncate_m8B572F4C2125BC7F2E452FB3A684BDF8B2273D6D_inline (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* ___d0, const RuntimeMethod* method) ;
 // System.Single System.Decimal/DecCalc::VarR4FromDec(System.Decimal&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DecCalc_VarR4FromDec_mD03BBE3263488DC9DF82F4B3C618AF52E6F132A0 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* ___value0, const RuntimeMethod* method) ;
+// System.Int64 System.Decimal::ToInt64(System.Decimal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Decimal_ToInt64_mA97479D4AC61BC0E51DD9552C78EAC2B13C6F347 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d0, const RuntimeMethod* method) ;
 // System.UInt64 System.Decimal::ToUInt64(System.Decimal)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Decimal_ToUInt64_m291071E9749B7651271F3F11026A6A7DE7DA4D3A (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d0, const RuntimeMethod* method) ;
 // System.Single System.Decimal::ToSingle(System.Decimal)
@@ -18343,7 +18345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __ComObject__ctor_m2778D7D2ABBD443DC5D4D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Decimal_get_High_m86BC909DA3D43FC917C408DCACE5FFB0D73DB4DC (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___hi_6;
+		int32_t L_0 = __this->___hi_9;
 		return L_0;
 	}
 }
@@ -18360,7 +18362,7 @@ IL2CPP_EXTERN_C  uint32_t Decimal_get_High_m86BC909DA3D43FC917C408DCACE5FFB0D73D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Decimal_get_Low_m8B0C535B60CF68D2E41E29F35949F4989D41799C (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___lo_7;
+		int32_t L_0 = __this->___lo_10;
 		return L_0;
 	}
 }
@@ -18377,7 +18379,7 @@ IL2CPP_EXTERN_C  uint32_t Decimal_get_Low_m8B0C535B60CF68D2E41E29F35949F4989D417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Decimal_get_Mid_mEE06DEE2D89FDD11819D89AD0FF8639866A51788 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___mid_8;
+		int32_t L_0 = __this->___mid_11;
 		return L_0;
 	}
 }
@@ -18394,7 +18396,7 @@ IL2CPP_EXTERN_C  uint32_t Decimal_get_Mid_mEE06DEE2D89FDD11819D89AD0FF8639866A51
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Decimal_get_IsNegative_m025720DC08538A43E4BBAE1993B08E98120BF31C (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___flags_5;
+		int32_t L_0 = __this->___flags_8;
 		return (bool)((((int32_t)L_0) < ((int32_t)0))? 1 : 0);
 	}
 }
@@ -18411,7 +18413,7 @@ IL2CPP_EXTERN_C  bool Decimal_get_IsNegative_m025720DC08538A43E4BBAE1993B08E9812
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Decimal_get_Scale_mC0C890DDEB20DA86F6F1A5BDB44E841FEF2C4671 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___flags_5;
+		int32_t L_0 = __this->___flags_8;
 		return ((int32_t)(uint8_t)((int32_t)(L_0>>((int32_t)16))));
 	}
 }
@@ -18451,7 +18453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Decimal_get_Low64_m024EBF16396B6B23A
 
 IL_001a:
 	{
-		uint64_t L_3 = __this->___ulomidLE_9;
+		uint64_t L_3 = __this->___ulomidLE_12;
 		return L_3;
 	}
 }
@@ -18506,13 +18508,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal__ctor_m6DDFD6E3A7A8CDEB1BADF8E09
 		}
 	}
 	{
-		__this->___flags_5 = 0;
+		__this->___flags_8 = 0;
 		goto IL_001c;
 	}
 
 IL_000d:
 	{
-		__this->___flags_5 = ((int32_t)-2147483648LL);
+		__this->___flags_8 = ((int32_t)-2147483648LL);
 		int32_t L_1 = ___value0;
 		___value0 = ((-L_1));
 	}
@@ -18520,9 +18522,9 @@ IL_000d:
 IL_001c:
 	{
 		int32_t L_2 = ___value0;
-		__this->___lo_7 = L_2;
-		__this->___mid_8 = 0;
-		__this->___hi_6 = 0;
+		__this->___lo_10 = L_2;
+		__this->___mid_11 = 0;
+		__this->___hi_9 = 0;
 		return;
 	}
 }
@@ -18537,11 +18539,11 @@ IL2CPP_EXTERN_C  void Decimal__ctor_m6DDFD6E3A7A8CDEB1BADF8E09A8D8E1BDA9497A9_Ad
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal__ctor_m2A5CA96744F1CA434D87C61A7856FA2F2C2C1191 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, uint32_t ___value0, const RuntimeMethod* method) 
 {
 	{
-		__this->___flags_5 = 0;
+		__this->___flags_8 = 0;
 		uint32_t L_0 = ___value0;
-		__this->___lo_7 = L_0;
-		__this->___mid_8 = 0;
-		__this->___hi_6 = 0;
+		__this->___lo_10 = L_0;
+		__this->___mid_11 = 0;
+		__this->___hi_9 = 0;
 		return;
 	}
 }
@@ -18563,13 +18565,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal__ctor_mD42FF624FC0A2122E4F867709
 		}
 	}
 	{
-		__this->___flags_5 = 0;
+		__this->___flags_8 = 0;
 		goto IL_001d;
 	}
 
 IL_000e:
 	{
-		__this->___flags_5 = ((int32_t)-2147483648LL);
+		__this->___flags_8 = ((int32_t)-2147483648LL);
 		int64_t L_1 = ___value0;
 		___value0 = ((-L_1));
 	}
@@ -18577,10 +18579,10 @@ IL_000e:
 IL_001d:
 	{
 		int64_t L_2 = ___value0;
-		__this->___lo_7 = ((int32_t)L_2);
+		__this->___lo_10 = ((int32_t)L_2);
 		int64_t L_3 = ___value0;
-		__this->___mid_8 = ((int32_t)((int64_t)(L_3>>((int32_t)32))));
-		__this->___hi_6 = 0;
+		__this->___mid_11 = ((int32_t)((int64_t)(L_3>>((int32_t)32))));
+		__this->___hi_9 = 0;
 		return;
 	}
 }
@@ -18595,12 +18597,12 @@ IL2CPP_EXTERN_C  void Decimal__ctor_mD42FF624FC0A2122E4F867709F3C03304E99BE71_Ad
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal__ctor_m9CB8BFC1B0EDC4847DC5F36E7477E4A60F3E624C (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, uint64_t ___value0, const RuntimeMethod* method) 
 {
 	{
-		__this->___flags_5 = 0;
+		__this->___flags_8 = 0;
 		uint64_t L_0 = ___value0;
-		__this->___lo_7 = ((int32_t)L_0);
+		__this->___lo_10 = ((int32_t)L_0);
 		uint64_t L_1 = ___value0;
-		__this->___mid_8 = ((int32_t)((int64_t)((uint64_t)L_1>>((int32_t)32))));
-		__this->___hi_6 = 0;
+		__this->___mid_11 = ((int32_t)((int64_t)((uint64_t)L_1>>((int32_t)32))));
+		__this->___hi_9 = 0;
 		return;
 	}
 }
@@ -18738,19 +18740,19 @@ IL_000e:
 		NullCheck(L_8);
 		int32_t L_9 = 0;
 		int32_t L_10 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
-		__this->___lo_7 = L_10;
+		__this->___lo_10 = L_10;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_11 = ___bits0;
 		NullCheck(L_11);
 		int32_t L_12 = 1;
 		int32_t L_13 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
-		__this->___mid_8 = L_13;
+		__this->___mid_11 = L_13;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = ___bits0;
 		NullCheck(L_14);
 		int32_t L_15 = 2;
 		int32_t L_16 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
-		__this->___hi_6 = L_16;
+		__this->___hi_9 = L_16;
 		int32_t L_17 = V_0;
-		__this->___flags_5 = L_17;
+		__this->___flags_8 = L_17;
 		return;
 	}
 
@@ -18789,13 +18791,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal__ctor_mC089D0AF6A28E017DE6F2F096
 IL_0016:
 	{
 		int32_t L_2 = ___lo0;
-		__this->___lo_7 = L_2;
+		__this->___lo_10 = L_2;
 		int32_t L_3 = ___mid1;
-		__this->___mid_8 = L_3;
+		__this->___mid_11 = L_3;
 		int32_t L_4 = ___hi2;
-		__this->___hi_6 = L_4;
+		__this->___hi_9 = L_4;
 		uint8_t L_5 = ___scale4;
-		__this->___flags_5 = ((int32_t)((int32_t)L_5<<((int32_t)16)));
+		__this->___flags_8 = ((int32_t)((int32_t)L_5<<((int32_t)16)));
 		bool L_6 = ___isNegative3;
 		if (!L_6)
 		{
@@ -18803,8 +18805,8 @@ IL_0016:
 		}
 	}
 	{
-		int32_t L_7 = __this->___flags_5;
-		__this->___flags_5 = ((int32_t)(L_7|((int32_t)-2147483648LL)));
+		int32_t L_7 = __this->___flags_8;
+		__this->___flags_8 = ((int32_t)(L_7|((int32_t)-2147483648LL)));
 	}
 
 IL_004c:
@@ -18829,7 +18831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal_System_Runtime_Serialization_IDe
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		int32_t L_0 = __this->___flags_5;
+		int32_t L_0 = __this->___flags_8;
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Decimal_IsValid_m6CAE43702060DCF4903BC805F7B8DC9D8EE6E8AD(L_0, NULL);
@@ -19541,9 +19543,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Decimal_ToInt32_m683C06E2C4596EC3BD71
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		Decimal_Truncate_m8B572F4C2125BC7F2E452FB3A684BDF8B2273D6D_inline((&___d0), NULL);
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___d0;
-		int32_t L_1 = L_0.___hi_6;
+		int32_t L_1 = L_0.___hi_9;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_2 = ___d0;
-		int32_t L_3 = L_2.___mid_8;
+		int32_t L_3 = L_2.___mid_11;
 		if (((int32_t)(L_1|L_3)))
 		{
 			goto IL_0035;
@@ -19551,7 +19553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Decimal_ToInt32_m683C06E2C4596EC3BD71
 	}
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_4 = ___d0;
-		int32_t L_5 = L_4.___lo_7;
+		int32_t L_5 = L_4.___lo_10;
 		V_0 = L_5;
 		bool L_6;
 		L_6 = Decimal_get_IsNegative_m025720DC08538A43E4BBAE1993B08E98120BF31C((&___d0), NULL);
@@ -19609,7 +19611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Decimal_ToInt64_mA97479D4AC61BC0E51DD
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		Decimal_Truncate_m8B572F4C2125BC7F2E452FB3A684BDF8B2273D6D_inline((&___d0), NULL);
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___d0;
-		int32_t L_1 = L_0.___hi_6;
+		int32_t L_1 = L_0.___hi_9;
 		if (L_1)
 		{
 			goto IL_0031;
@@ -19738,9 +19740,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Decimal_ToUInt32_mF5CF64E6C53BECACD3
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		Decimal_Truncate_m8B572F4C2125BC7F2E452FB3A684BDF8B2273D6D_inline((&___d0), NULL);
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___d0;
-		int32_t L_1 = L_0.___hi_6;
+		int32_t L_1 = L_0.___hi_9;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_2 = ___d0;
-		int32_t L_3 = L_2.___mid_8;
+		int32_t L_3 = L_2.___mid_11;
 		if (((int32_t)(L_1|L_3)))
 		{
 			goto IL_002c;
@@ -19793,7 +19795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Decimal_ToUInt64_m291071E9749B765127
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		Decimal_Truncate_m8B572F4C2125BC7F2E452FB3A684BDF8B2273D6D_inline((&___d0), NULL);
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___d0;
-		int32_t L_1 = L_0.___hi_6;
+		int32_t L_1 = L_0.___hi_9;
 		if (L_1)
 		{
 			goto IL_0025;
@@ -19861,7 +19863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal_Truncate_m8B572F4C2125BC7F2E452F
 	int32_t V_0 = 0;
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_0 = ___d0;
-		int32_t L_1 = L_0->___flags_5;
+		int32_t L_1 = L_0->___flags_8;
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		if (!((int32_t)(L_2&((int32_t)16711680))))
@@ -19994,6 +19996,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 		return L_1;
 	}
 }
+// System.Int64 System.Decimal::op_Explicit(System.Decimal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Decimal_op_Explicit_m6B67B2A7178964AC1A162FC13810E29FE68A5BDC (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
+		int64_t L_1;
+		L_1 = Decimal_ToInt64_mA97479D4AC61BC0E51DD9552C78EAC2B13C6F347(L_0, NULL);
+		return L_1;
+	}
+}
 // System.UInt64 System.Decimal::op_Explicit(System.Decimal)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Decimal_op_Explicit_mEF6859CF7A1EAF3FBCE77D375F9ED98551012D41 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___value0, const RuntimeMethod* method) 
 {
@@ -20067,6 +20086,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 		return L_2;
 	}
 }
+// System.Decimal System.Decimal::op_Subtraction(System.Decimal,System.Decimal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F Decimal_op_Subtraction_m50F5DC718BD003A09A5BC62BAA3DECD0745AD3F1 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d10, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d21, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
+		DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9* L_0;
+		L_0 = Decimal_AsMutable_m8E50AF9E0B15E2BE669898272B3D252B56D10ABD((&___d10), NULL);
+		DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9* L_1;
+		L_1 = Decimal_AsMutable_m8E50AF9E0B15E2BE669898272B3D252B56D10ABD((&___d21), NULL);
+		il2cpp_codegen_runtime_class_init_inline(DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9_il2cpp_TypeInfo_var);
+		DecCalc_DecAddSub_m7A9364D191BDFC2D5F9AA0130AC2684578A9BE8D(L_0, L_1, (bool)1, NULL);
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_2 = ___d10;
+		return L_2;
+	}
+}
 // System.Decimal System.Decimal::op_Multiply(System.Decimal,System.Decimal)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F Decimal_op_Multiply_mFD6D7FB94F0CDF935CEE8527EA9FD3EAB159EF19 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d10, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d21, const RuntimeMethod* method) 
 {
@@ -20087,6 +20128,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 		DecCalc_VarDecMul_m7D5028917A72B35DD5C004EB8A8EC0BBBCD65A30(L_0, L_1, NULL);
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_2 = ___d10;
 		return L_2;
+	}
+}
+// System.Boolean System.Decimal::op_Equality(System.Decimal,System.Decimal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Decimal_op_Equality_m48AE8B579CA29541C36D456B707AF9D8015C3558 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d10, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d21, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9_il2cpp_TypeInfo_var);
+		int32_t L_0;
+		L_0 = DecCalc_VarDecCmp_mB0BA18FC25FD0F5D24F349E044E5BEB9DA04E615((&___d10), (&___d21), NULL);
+		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
 // System.Boolean System.Decimal::op_Inequality(System.Decimal,System.Decimal)
@@ -20510,23 +20567,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal__cctor_mDF76136302BB695C9CBEC263
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		Decimal__ctor_m6DDFD6E3A7A8CDEB1BADF8E09A8D8E1BDA9497A9((&L_0), 0, /*hidden argument*/NULL);
-		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_0 = L_0;
+		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_3 = L_0;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1;
 		memset((&L_1), 0, sizeof(L_1));
 		Decimal__ctor_m6DDFD6E3A7A8CDEB1BADF8E09A8D8E1BDA9497A9((&L_1), 1, /*hidden argument*/NULL);
-		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___One_1 = L_1;
+		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___One_4 = L_1;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		Decimal__ctor_m6DDFD6E3A7A8CDEB1BADF8E09A8D8E1BDA9497A9((&L_2), (-1), /*hidden argument*/NULL);
-		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___MinusOne_2 = L_2;
+		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___MinusOne_5 = L_2;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_3;
 		memset((&L_3), 0, sizeof(L_3));
 		Decimal__ctor_mC089D0AF6A28E017DE6F2F0966D8EBEBFE2DAAF7((&L_3), (-1), (-1), (-1), (bool)0, (uint8_t)0, /*hidden argument*/NULL);
-		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___MaxValue_3 = L_3;
+		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___MaxValue_6 = L_3;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_4;
 		memset((&L_4), 0, sizeof(L_4));
 		Decimal__ctor_mC089D0AF6A28E017DE6F2F0966D8EBEBFE2DAAF7((&L_4), (-1), (-1), (-1), (bool)1, (uint8_t)0, /*hidden argument*/NULL);
-		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___MinValue_4 = L_4;
+		((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___MinValue_7 = L_4;
 		return;
 	}
 }
@@ -22451,7 +22508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DecCalc_VarDecCmp_mB0BA18FC25FD0F5D24
 IL_002e:
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_12 = ___d10;
-		int32_t L_13 = L_12->___flags_5;
+		int32_t L_13 = L_12->___flags_8;
 		return ((int32_t)(((int32_t)(L_13>>((int32_t)31)))|1));
 	}
 
@@ -22473,16 +22530,16 @@ IL_003a:
 	}
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_20 = ___d21;
-		int32_t L_21 = L_20->___flags_5;
+		int32_t L_21 = L_20->___flags_8;
 		return ((-((int32_t)(((int32_t)(L_21>>((int32_t)31)))|1))));
 	}
 
 IL_005d:
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_22 = ___d10;
-		int32_t L_23 = L_22->___flags_5;
+		int32_t L_23 = L_22->___flags_8;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_24 = ___d21;
-		int32_t L_25 = L_24->___flags_5;
+		int32_t L_25 = L_24->___flags_8;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(L_23>>((int32_t)31))), ((int32_t)(L_25>>((int32_t)31)))));
 		int32_t L_26 = V_0;
 		if (!L_26)
@@ -22528,11 +22585,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DecCalc_VarDecCmpSub_mCB817811CB3E283
 	int32_t G_B6_0 = 0;
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_0 = ___d21;
-		int32_t L_1 = L_0->___flags_5;
+		int32_t L_1 = L_0->___flags_8;
 		int32_t L_2 = L_1;
 		V_0 = ((int32_t)(((int32_t)(L_2>>((int32_t)31)))|1));
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_3 = ___d10;
-		int32_t L_4 = L_3->___flags_5;
+		int32_t L_4 = L_3->___flags_8;
 		V_1 = ((int32_t)il2cpp_codegen_subtract(L_2, L_4));
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_5 = ___d10;
 		uint64_t L_6;
@@ -24324,7 +24381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DecCalc_GetHashCode_mF11C6E2E773E1C34
 IL_0018:
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_6 = ___d0;
-		int32_t L_7 = L_6->___flags_5;
+		int32_t L_7 = L_6->___flags_8;
 		V_0 = L_7;
 		uint32_t L_8 = V_0;
 		if (!((int32_t)((int32_t)L_8&((int32_t)16711680))))
@@ -28048,21 +28105,21 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UIntPtr__ctor_m8FD36BD3C315E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t Decimal_get_High_m86BC909DA3D43FC917C408DCACE5FFB0D73DB4DC_inline (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___hi_6;
+		int32_t L_0 = __this->___hi_9;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t Decimal_get_Low_m8B0C535B60CF68D2E41E29F35949F4989D41799C_inline (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___lo_7;
+		int32_t L_0 = __this->___lo_10;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t Decimal_get_Mid_mEE06DEE2D89FDD11819D89AD0FF8639866A51788_inline (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___mid_8;
+		int32_t L_0 = __this->___mid_11;
 		return L_0;
 	}
 }
@@ -28117,7 +28174,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Decimal_Truncate_m8B572F4C21
 	int32_t V_0 = 0;
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* L_0 = ___d0;
-		int32_t L_1 = L_0->___flags_5;
+		int32_t L_1 = L_0->___flags_8;
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		if (!((int32_t)(L_2&((int32_t)16711680))))
