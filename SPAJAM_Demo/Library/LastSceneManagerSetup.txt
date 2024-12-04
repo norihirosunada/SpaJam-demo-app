@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Samples/OpenJTalkForUnity/1.1.13/Sample/SpeakRandomVoice.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

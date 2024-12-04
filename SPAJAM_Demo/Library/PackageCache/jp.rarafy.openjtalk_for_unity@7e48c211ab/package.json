@@ -1,0 +1,15 @@
+{
+    "name": "jp.rarafy.openjtalk_for_unity",
+    "author": "rarafy",
+    "version": "1.1.13",
+    "displayName": "OpenJTalkForUnity",
+    "description": "This is a test package",
+    "unity": "2020.3",
+    "samples": [
+        {
+            "displayName": "Sample",
+            "description": "Displays how to use OpenJTalkForUnity [Install Recommended]",
+            "path": "Sample"
+        }
+    ]
+}
